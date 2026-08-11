@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arya Praditha — Digital Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress"></div><div class="page-glitch" id="pageGlitch"></div>
+<div class="glitch-layer glitch-a"></div><div class="glitch-layer glitch-b"></div>
+<div class="grid-bg"></div>
+<audio id="bgMusic" loop preload="auto">
+  <source src="futuristic-518080.mp3" type="audio/mpeg">
+</audio>
+<button class="music-toggle" id="musicToggle" aria-label="Toggle background music"><span>♫</span><b>OFF</b></button>
+<div class="spotlight"></div>
+
+<header class="nav">
+  <a class="logo" href="#home"><span>AP</span><b>ARYA<span>.</span></b></a>
+  <nav>
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="cv-mini" href="cv-arya-praditha.pdf" target="_blank">CV <span>↗</span></a>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-left reveal">
+    <div class="status"><i></i> AVAILABLE FOR OPPORTUNITIES</div>
+    <p class="mono label">COMPUTER SYSTEMS / IoT / CREATIVE</p>
+    <h1>Technology<br>meets <em>creativity.</em></h1>
+    <p class="lead">Portfolio digital yang merangkum perjalanan, project, dan kemampuan yang sedang saya kembangkan.</p>
+    <div class="actions">
+      <a class="btn lime" href="#work">Explore work <b>↓</b></a>
+      <a class="btn outline" href="cv-arya-praditha.pdf" target="_blank">Open CV <b>↗</b></a>
+    </div>
+    <div class="hero-meta"><span>01 — PORTFOLIO</span><span>2026</span></div>
+  </div>
+
+  <div class="visual reveal delay">
+    <div class="portrait-placeholder">
+      <img src="profile-arya.jpg" alt="Arya Praditha" class="profile-photo">
+      <div class="scan"></div>
+      <div class="portrait-caption"><b>ARYA PRADITHA</b><span>CREATIVE TECHNOLOGIST</span></div>
+    </div>
+    <div class="floating f1"><small>FOCUS</small><b>IoT</b></div>
+    <div class="floating f2"><small>BUILD</small><b>CREATE</b></div>
+    <div class="circle-text">TECH • IOT • CREATIVE • TECH • IOT • CREATIVE • </div><div class="glitch-chip">SYSTEM // ONLINE</div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="section-top reveal"><span class="num">01</span><div><p class="mono label">ABOUT</p><h2>A little bit<br><em>about me.</em></h2></div></div>
+  <div class="about-grid">
+    <div class="bio reveal">
+      <p>Saya adalah mahasiswa Sistem Komputer yang tertarik pada pengembangan teknologi, khususnya Internet of Things dan sistem berbasis mikrokontroler.</p>
+      <p>Selain sisi teknis, saya juga menikmati dunia visual dan creative work seperti videography dan editing. Saya percaya project yang bagus bukan hanya berfungsi, tetapi juga mudah dipahami dan menarik untuk dilihat.</p>
+    </div>
+    <div class="mini-cards reveal delay">
+      <article><span>01</span><b>Education</b><small>Computer Systems</small></article>
+      <article><span>02</span><b>Interest</b><small>IoT & Embedded</small></article>
+      <article><span>03</span><b>Creative</b><small>Video & Visual</small></article>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="section-top reveal"><span class="num">02</span><div><p class="mono label">CAPABILITIES</p><h2>Things I<br><em>work with.</em></h2></div></div>
+  <div class="skills-grid">
+    <div class="skill-panel reveal">
+      <div class="skill"><div><b>IoT / ESP32</b><span>85</span></div><div class="track"><i style="--w:85%"></i></div></div>
+      <div class="skill"><div><b>Arduino</b><span>80</span></div><div class="track"><i style="--w:80%"></i></div></div>
+      <div class="skill"><div><b>Python</b><span>70</span></div><div class="track"><i style="--w:70%"></i></div></div>
+      <div class="skill"><div><b>Flutter</b><span>65</span></div><div class="track"><i style="--w:65%"></i></div></div>
+      <div class="skill"><div><b>Videography</b><span>85</span></div><div class="track"><i style="--w:85%"></i></div></div>
+    </div>
+    <div class="radar reveal delay">
+      <div class="radar-ring r1"></div><div class="radar-ring r2"></div><div class="radar-ring r3"></div>
+      <div class="radar-line"></div><div class="radar-shape"></div>
+      <span class="rlabel l1">IoT</span><span class="rlabel l2">CODE</span><span class="rlabel l3">CREATIVE</span><span class="rlabel l4">SYSTEM</span>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <div class="section-top reveal"><span class="num">03</span><div><p class="mono label">SELECTED WORK</p><h2>Projects with<br><em>purpose.</em></h2></div></div>
+  <div class="work-grid">
+    <article class="work reveal" data-title="Smart Farming IoT" data-type="IoT PROJECT" data-desc="Sistem penyemprotan otomatis berbasis IoT untuk membantu proses monitoring dan otomasi pada lingkungan pertanian." data-stack="ESP32 / SENSOR / IoT">
+      <div class="work-img green"><span>01</span><b>IoT</b><div class="fake-device">◈</div></div>
+      <div class="work-body"><p>01 / IoT</p><h3>Smart Farming</h3><span>Automatic spraying system <b>↗</b></span></div>
+    </article>
+    <article class="work reveal delay" data-title="Smart Trash Bin" data-type="RESEARCH PROJECT" data-desc="Konsep Smart Trash Bin untuk pengolahan sampah organik menjadi pupuk organik cair dengan dukungan mikrokontroler dan sensor." data-stack="ESP32 / SENSOR / IoT">
+      <div class="work-img blue"><span>02</span><b>SMART</b><div class="fake-device">◇</div></div>
+      <div class="work-body"><p>02 / Research</p><h3>Smart Trash Bin</h3><span>Organic waste processing <b>↗</b></span></div>
+    </article>
+    <article class="work reveal" data-title="Embedded Machine Learning" data-type="MACHINE LEARNING" data-desc="Eksplorasi klasifikasi citra menggunakan Python dan TensorFlow/Keras sebagai bagian dari pembelajaran machine learning." data-stack="PYTHON / TENSORFLOW / CNN">
+      <div class="work-img purple"><span>03</span><b>ML</b><div class="fake-device">▦</div></div>
+      <div class="work-body"><p>03 / Machine Learning</p><h3>Embedded ML</h3><span>Image classification <b>↗</b></span></div>
+    </article>
+    <article class="work video-work reveal delay" data-title="Creative Videography" data-type="CREATIVE WORK" data-desc="Dokumentasi pemasangan alat IoT di Bedugul yang saya tampilkan sebagai karya videography dan dokumentasi project." data-stack="VIDEO / IoT / DOCUMENTATION">
+      <div class="work-video">
+        <video controls preload="metadata" playsinline>
+          <source src="Pemasangan_alat_iot_bedugul.mp4" type="video/mp4">
+          Browser kamu tidak mendukung video.
+        </video>
+        <div class="video-badge">04 / VIDEO</div>
+      </div>
+      <div class="work-body"><p>04 / Creative</p><h3>Videography</h3><span>Pemasangan alat IoT — Bedugul <b>↗</b></span></div>
+    </article>
+  </div>
+</section>
+
+<section class="section stats-wrap">
+  <div class="stats">
+    <div><b data-count="4">0</b><small>SELECTED PROJECTS</small></div>
+    <div><b data-count="5">0</b><small>CORE SKILLS</small></div>
+    <div><b data-count="3">0</b><small>TECH AREAS</small></div>
+    <div><b>∞</b><small>LEARNING MODE</small></div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="contact-inner reveal">
+    <p class="mono label">04 / CONTACT</p>
+    <h2>Have an idea?<br><em>Let's talk.</em></h2>
+    <p>Terbuka untuk belajar, berkolaborasi, dan mengembangkan project baru.</p>
+    <div class="contact-actions">
+      <a class="btn lime" href="https://mail.google.com/mail/?view=cm&fs=1&to=aryaditha13@gmail.com" target="_blank" rel="noopener">Gmail ↗</a>
+      <a class="btn wa" href="https://wa.me/6285931152688?text=Halo%20Arya%2C%20saya%20melihat%20portfolio%20kamu." target="_blank" rel="noopener">WhatsApp ↗</a>
+    </div>
+    <div class="contact-info">
+      <span>✉ aryaditha13@gmail.com</span>
+      <span>☏ 0859 3115 2688</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><span>© 2026 ARYA PRADITHA</span><span>DESIGNED WITH CURIOSITY.</span></footer>
+
+<div class="modal" id="modal">
+ <div class="modal-box">
+  <button id="close">×</button><p class="mono label" id="mtype">PROJECT</p><h2 id="mtitle">Project</h2><p id="mdesc"></p>
+  <div class="stack" id="mstack"></div><div class="modal-foot"><span>PROJECT DETAIL</span><a href="#work" id="back">Back ↩</a></div>
+ </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
